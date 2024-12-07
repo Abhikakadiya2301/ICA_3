@@ -1,7 +1,6 @@
 db:
   name: wp-database
   labels:
-    id: c0912546
     app: db
     env: dev
     stack: wordpress
