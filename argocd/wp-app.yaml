@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: 'https://github.com/Abhikakadiya2301/ICA_3.git'
-    targetRevision: master
+    targetRevision: main
     path: wp
     helm:
       valueFiles:

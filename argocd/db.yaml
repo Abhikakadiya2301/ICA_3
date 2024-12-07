@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/Abhikakadiya2301/ICA_3/'
-    targetRevision: master
-    path: ICA_3/db
+    repoURL: 'https://github.com/Abhikakadiya2301/ICA_3.git'
+    targetRevision: main
+    path: db
     helm:
       valueFiles:
         - values.yaml
