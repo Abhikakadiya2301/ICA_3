@@ -27,3 +27,8 @@ configMap:
             proxy_set_header X-Forwarded-Proto $scheme;
         }
     }
+
+labels:
+  id: c0912546
+	app: nginx-proxy
+  env: dev

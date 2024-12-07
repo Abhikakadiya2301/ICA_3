@@ -2,12 +2,13 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ .Values.wp.name }}
+  namespace: {{ .Values.wp.namespace }}
   labels:
 {{- toYaml .Values.wp.labels | nindent 4 }}
 spec:
   selector:
     matchLabels:
-{{- toYaml .Values.wp.labels | nindent 6 }}
+      id: {{.Values.wp.labels.id }}
   replicas: {{ .Values.wp.replicas }}
   template:
     metadata:
