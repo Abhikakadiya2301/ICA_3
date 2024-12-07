@@ -11,11 +11,11 @@ spec:
     path: wp
     helm:
       valueFiles:
-        - wp/values.yaml
-        - wp/templates/secrets.yaml
+        - values.yaml
+        - templates/secrets.yaml
   destination:
     server: https://kubernetes.default.svc
-    namespace: wpapp
+    namespace: wp
   syncPolicy:
     automated:
       prune: true

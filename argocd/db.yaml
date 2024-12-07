@@ -11,11 +11,11 @@ spec:
     path: db
     helm:
       valueFiles:
-        - db/values.yaml
-        - db/templates/secrets.yaml
+        - values.yaml
+        - templates/secrets.yaml
   destination:
     server: https://kubernetes.default.svc
-    namespace: wpdb
+    namespace: db
   syncPolicy:
     automated:
       prune: true
