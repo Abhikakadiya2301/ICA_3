@@ -11,8 +11,8 @@ spec:
     path: db
     helm:
       valueFiles:
-        - values.yaml
-        - secrets.yaml
+        - db/values.yaml
+        - db/templates/secrets.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: wpdb

@@ -11,8 +11,8 @@ spec:
     path: wp
     helm:
       valueFiles:
-        - values.yaml
-        - secrets.yaml
+        - wp/values.yaml
+        - wp/templates/secrets.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: wpapp
